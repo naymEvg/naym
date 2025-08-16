@@ -1,0 +1,185 @@
+{
+  "countries": [
+    {
+      "id": "schengen",
+      "name": "Шенген",
+      "code": "SCH",
+      "emoji": "🇪🇺",
+      "checklist": [
+        { "id": "passport_photo", "label": "Фотография на визу 35x45 мм", "required": true, "docType": "photo" },
+        { "id": "passport_main", "label": "Скан первой страницы паспорта", "required": true, "docType": "passport" },
+        { "id": "application_form", "label": "Анкета (подписанная)", "required": true, "docType": "form" },
+        { "id": "insurance", "label": "Страховка", "required": true, "docType": "insurance" }
+      ],
+      "validator": {
+        "file_types": ["jpg","jpeg","png"],
+        "max_size_bytes": 1572864,
+        "min_pixel_width": 600,
+        "min_pixel_height": 800,
+        "required_mm": "35x45",
+        "aspect_ratio": "35:45",
+        "background_hint": "white",
+        "head_box_ratio": { "min": 0.7, "max": 0.8 },
+        "face_direction": "front_only",
+        "glasses_allowed": false
+      }
+    },
+    {
+      "id": "china",
+      "name": "Китай",
+      "code": "CN",
+      "emoji": "🇨🇳",
+      "checklist": [
+        { "id": "passport_photo", "label": "Фотография на визу 33x48 мм", "required": true, "docType": "photo" },
+        { "id": "passport_main", "label": "Скан первой страницы паспорта", "required": true, "docType": "passport" },
+        { "id": "application_form", "label": "Анкета", "required": true, "docType": "form" }
+      ],
+      "validator": {
+        "file_types": ["jpg","jpeg","png"],
+        "max_size_bytes": 1572864,
+        "min_pixel_width": 620,
+        "min_pixel_height": 960,
+        "required_mm": "33x48",
+        "aspect_ratio": "33:48",
+        "background_hint": "white",
+        "head_box_ratio": { "min": 0.7, "max": 0.8 },
+        "face_direction": "front_only",
+        "glasses_allowed": false
+      }
+    },
+    {
+      "id": "japan",
+      "name": "Япония",
+      "code": "JP",
+      "emoji": "🇯🇵",
+      "checklist": [
+        { "id": "passport_photo", "label": "Фотография 45x45 мм", "required": true, "docType": "photo" },
+        { "id": "passport_main", "label": "Скан первой страницы паспорта", "required": true, "docType": "passport" },
+        { "id": "application_form", "label": "Анкета", "required": true, "docType": "form" }
+      ],
+      "validator": {
+        "file_types": ["jpg","jpeg","png"],
+        "max_size_bytes": 1572864,
+        "min_pixel_width": 800,
+        "min_pixel_height": 800,
+        "required_mm": "45x45",
+        "aspect_ratio": "1:1",
+        "background_hint": "white",
+        "head_box_ratio": { "min": 0.7, "max": 0.8 },
+        "face_direction": "front_only",
+        "glasses_allowed": false
+      }
+    },
+    {
+      "id": "india",
+      "name": "Индия",
+      "code": "IN",
+      "emoji": "🇮🇳",
+      "checklist": [
+        { "id": "passport_photo", "label": "Фотография 50x50 мм", "required": true, "docType": "photo" },
+        { "id": "passport_main", "label": "Скан первой страницы паспорта", "required": true, "docType": "passport" },
+        { "id": "application_form", "label": "Анкета", "required": true, "docType": "form" }
+      ],
+      "validator": {
+        "file_types": ["jpg","jpeg","png"],
+        "max_size_bytes": 1572864,
+        "min_pixel_width": 900,
+        "min_pixel_height": 900,
+        "required_mm": "50x50",
+        "aspect_ratio": "1:1",
+        "background_hint": "white",
+        "head_box_ratio": { "min": 0.7, "max": 0.8 },
+        "face_direction": "front_only",
+        "glasses_allowed": false
+      }
+    },
+    {
+      "id": "uae",
+      "name": "ОАЭ",
+      "code": "AE",
+      "emoji": "🇦🇪",
+      "checklist": [
+        { "id": "passport_photo", "label": "Фотография паспортная", "required": true, "docType": "photo" },
+        { "id": "passport_main", "label": "Скан первой страницы паспорта", "required": true, "docType": "passport" }
+      ],
+      "validator": {
+        "file_types": ["jpg","jpeg","png"],
+        "max_size_bytes": 1572864,
+        "min_pixel_width": 600,
+        "min_pixel_height": 800,
+        "required_mm": "35x45",
+        "aspect_ratio": "35:45",
+        "background_hint": "white",
+        "head_box_ratio": { "min": 0.7, "max": 0.8 },
+        "face_direction": "front_only",
+        "glasses_allowed": false
+      }
+    },
+    {
+      "id": "iran",
+      "name": "Иран",
+      "code": "IR",
+      "emoji": "🇮🇷",
+      "checklist": [
+        { "id": "passport_photo", "label": "Фотография", "required": true, "docType": "photo" },
+        { "id": "passport_main", "label": "Скан первой страницы паспорта", "required": true, "docType": "passport" }
+      ],
+      "validator": {
+        "file_types": ["jpg","jpeg","png"],
+        "max_size_bytes": 1572864,
+        "min_pixel_width": 600,
+        "min_pixel_height": 800,
+        "required_mm": "35x45",
+        "aspect_ratio": "35:45",
+        "background_hint": "white",
+        "head_box_ratio": { "min": 0.7, "max": 0.8 },
+        "face_direction": "front_only",
+        "glasses_allowed": false
+      }
+    },
+    {
+      "id": "thailand",
+      "name": "Таиланд",
+      "code": "TH",
+      "emoji": "🇹🇭",
+      "checklist": [
+        { "id": "passport_photo", "label": "Фотография", "required": true, "docType": "photo" },
+        { "id": "passport_main", "label": "Скан первой страницы паспорта", "required": true, "docType": "passport" }
+      ],
+      "validator": {
+        "file_types": ["jpg","jpeg","png"],
+        "max_size_bytes": 1572864,
+        "min_pixel_width": 600,
+        "min_pixel_height": 800,
+        "required_mm": "35x45",
+        "aspect_ratio": "35:45",
+        "background_hint": "white",
+        "head_box_ratio": { "min": 0.7, "max": 0.8 },
+        "face_direction": "front_only",
+        "glasses_allowed": false
+      }
+    },
+    {
+      "id": "vietnam",
+      "name": "Вьетнам",
+      "code": "VN",
+      "emoji": "🇻🇳",
+      "checklist": [
+        { "id": "passport_photo", "label": "Фотография", "required": true, "docType": "photo" },
+        { "id": "passport_main", "label": "Скан первой страницы паспорта", "required": true, "docType": "passport" }
+      ],
+      "validator": {
+        "file_types": ["jpg","jpeg","png"],
+        "max_size_bytes": 1572864,
+        "min_pixel_width": 600,
+        "min_pixel_height": 800,
+        "required_mm": "35x45",
+        "aspect_ratio": "35:45",
+        "background_hint": "white",
+        "head_box_ratio": { "min": 0.7, "max": 0.8 },
+        "face_direction": "front_only",
+        "glasses_allowed": false
+      }
+    }
+  ]
+}
