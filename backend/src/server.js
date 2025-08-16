@@ -58,6 +58,15 @@ app.get('/api/files/:id', requireAuth, async (req, res) => {
   }
 });
 
+// Serve frontend (if dist is available)
+const frontendDistDir = process.env.FRONTEND_DIST_DIR;
+if (frontendDistDir && fs.existsSync(frontendDistDir)) {
+  app.use(express.static(frontendDistDir));
+  app.get(/^(?!\/api).*/, (req, res) => {
+    res.sendFile(path.join(frontendDistDir, 'index.html'));
+  });
+}
+
 app.listen(port, () => {
   console.log(`[server] listening on http://localhost:${port}`);
 });
