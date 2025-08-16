@@ -1,0 +1,13 @@
+node_modules
+npm-debug.log
+Dockerfile
+.dockerignore
+.git
+.gitignore
+**/.DS_Store
+/frontend/dist
+/uploads
+/data
+/logs
+.env
+backend/.env
